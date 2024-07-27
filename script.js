@@ -19,6 +19,11 @@ const drawBox = () => {
 
 /* Function to display different message */
 const button = () => {
-
+    const ctx = document.getElementById("canvas").getContext("2d");
+    const text = ctx.measureText("foo"); // TextMetrics object
+    text.width; // 16;
 }
 
+const mouseDown = () => {
+    const mouseClock = mouseDown;
+}
