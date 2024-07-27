@@ -12,9 +12,9 @@ let returnedMessages = [];
 
 for (let messageType in messagesToDisplay) {
     if(messageType === 'messages')
-        returnedMessages.push(messagesToDisplay[messageType][randomNumber(messageType.length)]);
+        returnedMessages.push(messagesToDisplay[messageType][randomNumber(messagesToDisplay[messageType].length)]);
     if(messageType === 'advice')
-        returnedMessages.push(messagesToDisplay[messageType][randomNumber(messageType.length)]);
+        returnedMessages.push(messagesToDisplay[messageType][randomNumber(messagesToDisplay[messageType].length)]);
 }
 
 const formatMessages = (arr) => {
@@ -22,6 +22,7 @@ const formatMessages = (arr) => {
         console.log(arr[message]);
 }
 
-console.log("There is a message for you. Please take a look!");
+console.log("There is a message for you. Please take a look!\n");
 formatMessages(returnedMessages);
+console.log("\n");
 console.log("Thanks for reading it! Hope it helped!");
